@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Test your knowledge of the Baltimore Ravens NFL team.">
+    
+    <title>Baltimore Ravens Quiz</title>
+    
+    <!-- Normalize.css, a cross-browser reset file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link href="float-grid.css" rel="stylesheet" type="text/css"/>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body>
+    <header role="banner">
+      <div class="row">
+        <div class="col-4">
+          <img class="logo" src="https://i.pinimg.com/564x/98/0b/fa/980bfaea0485c02c1a789946e6a5829b.jpg" alt="Baltimore Ravens Logo">
+        </div>
+        <div class="col-8">
+          <ul>
+            <li>
+              Question: <span class="js-question-count">0</span>/10
+            </li>
+            <li>Score: <span class="js-current-score">0</span></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <main role="main">
+      <section class="start_page js-starting-view">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="quiz_start">Can you tackle this Baltimore Ravens Quiz?
+            </h1>
+            <form class="quiz_launch js-quiz-launch">
+              <button type="submit">Ready! Go!</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      <section class="quiz_page js-quiz-view">
+        
+      </section>    
+    </main>
+    
+    <footer role="contentinfo">By: Brandon Otto
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="Data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

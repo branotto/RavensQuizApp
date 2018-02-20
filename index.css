@@ -1,0 +1,76 @@
+body {
+  background: #24173A;
+  color: #FFFFFF;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+header {
+  border: 2px solid #C4A350;
+}
+
+header ul {
+  list-style: none;
+  text-align: right;
+}
+
+header ul li {
+  margin: 20px 10px;
+  font-size: 20px;
+}
+
+.logo {
+  height: 95px;
+  margin: 5px 2px;
+  border-radius: 50%;
+  border: 1px solid #C4A350;
+}
+
+label {
+  display: block;
+  width: 100%;
+  height: 65px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #b0b0b0;
+  border-radius: 12px;
+  text-align: left;
+}
+
+label:hover {
+  background: #24173A;
+  border: 3px solid #C4A350;
+  color: #C4A350;
+}
+
+button:hover, button:focus {
+  background: #24173A;
+  border: 3px solid #C4A350;
+  color: #C4A350;
+}
+
+input:selected {
+  background: #24173A;
+  border: 3px solid #C4A350;
+}
+
+button {
+  border-radius: 12px;
+  background: #24173A;
+  color: #FFF;
+  font-size: 24px;
+  border: 2px solid #C4A350;
+}
+
+.game_over {
+  margin-top: 25px;
+  height: 200px;
+}
+
+footer {
+  margin-top: 50px;
+}
