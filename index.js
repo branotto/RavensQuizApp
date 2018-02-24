@@ -6,7 +6,20 @@ let score = 0;
 //This function will display feedback on the user's correct answer
 function displayFeedBackCorrect()
 {
-  $('.js-quiz-view').html(user_response_correct);
+  $('.js-quiz-view').html(
+    `<div class="row">
+      <div class="col-12">
+        <div class="correct_answer">
+        <iframe src="https://giphy.com/embed/3o6Ztgb2DLyCHIgWYM" width=75% height=200px frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p><a href="https://giphy.com/gifs/nfl-football-baltimore-ravens-3o6Ztgb2DLyCHIgWYM">via GIPHY</a></p>
+        <h2>Way to Go! Thats correct!</h2>
+        <form class="advance_question js-next-question">
+          <button type="submit" class="next_question js-next-question">Next question</button>
+        </form>
+      </div>
+    </div>
+  </div>`);
+
   score++;
   updateScoreDisplay();
   advanceToNextQuestion();
@@ -78,10 +91,9 @@ function displayQuestion()
   let currentQuestion =
   `<div class="row">
     <div class="col-12">
-      <h2>${questionBank[question].question}</h2>
       <form class="answer_form js-answer-form">
         <fieldset name="answer section">
-          <legend>Select one Answer</legend>
+          <legend>${questionBank[question].question}</legend>
             <label for="optionA" class="answer_one">
               <input type="radio" id="optionA" name="answer" value="${questionBank[question].answer_one}" required autofocus>
               <span>${questionBank[question].answer_one}</span>
@@ -181,7 +193,26 @@ function endQuizToRestart()
 {
   $('.js-restart-quiz-button').click(function(event)
   {
-    location.reload(true);
+    question = 0;
+    score = 0;
+
+    $('.js-starting-view').html(
+      `<div class="row">
+        <div class="col-12">
+          <h1 class="quiz_start">Can you tackle this Baltimore Ravens Quiz?
+          </h1>
+          <form class="quiz_launch js-quiz-launch">
+            <button type="submit">Ready! Go!</button>
+          </form>
+        </div>
+      </div>`);
+
+      $('.js-quiz-view').empty();
+
+      updateScoreDisplay();
+      updateQuestionDisplay();
+      
+      startQuiz();
   });
 
 }

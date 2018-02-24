@@ -83,17 +83,3 @@ const questionBank =
   },  
 
 ];
-
-const user_response_correct = 
-`<div class="row">
-  <div class="col-12">
-    <div class="correct_answer">
-      <iframe src="https://giphy.com/embed/3o6Ztgb2DLyCHIgWYM" width=75% height=200px frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      <p><a href="https://giphy.com/gifs/nfl-football-baltimore-ravens-3o6Ztgb2DLyCHIgWYM">via GIPHY</a></p>
-      <h2>Way to Go! Thats correct!</h2>
-      <form class="advance_question js-next-question">
-        <button type="submit" class="next_question js-next-question">Next question</button>
-      </form>
-    </div>
-  </div>
-</div>`;
