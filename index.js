@@ -10,7 +10,7 @@ function displayFeedBackCorrect()
     `<div class="row">
       <div class="col-12">
         <div class="correct_answer">
-        <iframe src="https://giphy.com/embed/3o6Ztgb2DLyCHIgWYM" width=75% height=200px frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <iframe src="https://giphy.com/embed/3o6Ztgb2DLyCHIgWYM" width=75% height=200px frameBorder="0" class="giphy-embed" title="Correct Answer" allowFullScreen></iframe>
         <p><a href="https://giphy.com/gifs/nfl-football-baltimore-ravens-3o6Ztgb2DLyCHIgWYM">via GIPHY</a></p>
         <h2>Way to Go! Thats correct!</h2>
         <form class="advance_question js-next-question">
@@ -32,7 +32,7 @@ function displayFeedBackIncorrect()
     `<div class="row">
       <div class="col-12">
         <div class="incorrect_answer">
-          <iframe src="https://giphy.com/embed/3o751Y4UC131goQSv6" width=75% height=200px frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+          <iframe src="https://giphy.com/embed/3o751Y4UC131goQSv6" width=75% height=200px frameBorder="0" class="giphy-embed" title="Incorrect Answer" allowFullScreen></iframe>
           <p><a href="https://giphy.com/gifs/nfl-football-baltimore-ravens-3o751Y4UC131goQSv6">via GIPHY</a></p>
           <h2>Oh no! The correct answer is ${questionBank[question].correct_answer}
           </h2>
@@ -95,22 +95,22 @@ function displayQuestion()
         <fieldset name="answer section">
           <legend>${questionBank[question].question}</legend>
             <label for="optionA" class="answer_one">
-              <input type="radio" id="optionA" name="answer" value="${questionBank[question].answer_one}" required autofocus>
+              <input type="radio" role="radiogroup" id="optionA" name="answer" value="${questionBank[question].answer_one}" required autofocus>
               <span>${questionBank[question].answer_one}</span>
             </label>
         
             <label for="optionB" class="answer_two">
-              <input type="radio" id="optionB" name="answer" value="${questionBank[question].answer_two}" required>
+              <input type="radio" role="radiogroup" id="optionB" name="answer" value="${questionBank[question].answer_two}" required>
               <span>${questionBank[question].answer_two}</span>
             </label>
         
             <label for="optionC" class="answer_three">
-              <input type="radio" id="optionC" name="answer" value="${questionBank[question].answer_three}" required>
+              <input type="radio" role="radiogroup" id="optionC" name="answer" value="${questionBank[question].answer_three}" required>
               <span>${questionBank[question].answer_three}</span>
             </label>
         
             <label for="optionD" class="answer_four">
-              <input type="radio" id="optionD" name="answer" value="${questionBank[question].answer_four}" required>
+              <input type="radio" role="radiogroup" id="optionD" name="answer" value="${questionBank[question].answer_four}" required>
               <span>${questionBank[question].answer_four}</span>
             </label>
         
